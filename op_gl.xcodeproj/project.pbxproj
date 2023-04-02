@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		673499B929D936F1002D4D38 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 673499B829D936F1002D4D38 /* Cocoa.framework */; };
 		677CFBB929D84DB80058A3B0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 677CFBB829D84DB80058A3B0 /* main.cpp */; };
+		677CFBC129D84DC10058A3B0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677CFBC029D84DC10058A3B0 /* OpenGL.framework */; };
+		677CFBC329D84DF90058A3B0 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677CFBC229D84DF90058A3B0 /* GLUT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +26,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		673499B829D936F1002D4D38 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		677CFBB529D84DB80058A3B0 /* op_gl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = op_gl; sourceTree = BUILT_PRODUCTS_DIR; };
 		677CFBB829D84DB80058A3B0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		677CFBC029D84DC10058A3B0 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		677CFBC229D84DF90058A3B0 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +38,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				677CFBC329D84DF90058A3B0 /* GLUT.framework in Frameworks */,
+				677CFBC129D84DC10058A3B0 /* OpenGL.framework in Frameworks */,
+				673499B929D936F1002D4D38 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +52,7 @@
 			children = (
 				677CFBB729D84DB80058A3B0 /* op_gl */,
 				677CFBB629D84DB80058A3B0 /* Products */,
+				677CFBBF29D84DC10058A3B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +70,16 @@
 				677CFBB829D84DB80058A3B0 /* main.cpp */,
 			);
 			path = op_gl;
+			sourceTree = "<group>";
+		};
+		677CFBBF29D84DC10058A3B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				673499B829D936F1002D4D38 /* Cocoa.framework */,
+				677CFBC229D84DF90058A3B0 /* GLUT.framework */,
+				677CFBC029D84DC10058A3B0 /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
